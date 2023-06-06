@@ -15,10 +15,9 @@ jobs:
       - run: python tests.py
 
 workflow: 
-  build_now:
+  build_and_test:
     jobs:
       - build
       - test:
           requires:
             - build
-            
